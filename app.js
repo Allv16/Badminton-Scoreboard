@@ -25,7 +25,7 @@ start();
         homeCounters++;
         homeScore.innerText = `${homeCounters}`
         
-        if(homeCounters >=5 && awayCounters>=4 && homeCounters-awayCounters === 2 || homeCounters === 5 && awayCounters < 4)
+        if(homeCounters >=21 && awayCounters>=20 && homeCounters-awayCounters === 2 || homeCounters === 21 && awayCounters < 20)
         {
             actionBtn(true);
             homeScore.style.color = 'green';
@@ -39,7 +39,7 @@ start();
     awayBtn.addEventListener('click', ()=>{
         awayCounters++;
         awayScore.innerText = `${awayCounters}`
-        if(awayCounters >=5 && homeCounters>=4 && awayCounters-homeCounters === 2 || awayCounters=== 5 && homeCounters < 4)
+        if(awayCounters >=21 && homeCounters>=20 && awayCounters-homeCounters === 2 || awayCounters=== 21 && homeCounters < 20)
         {
             actionBtn(true);
             homeScore.style.color = 'red';
